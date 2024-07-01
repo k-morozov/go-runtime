@@ -10,7 +10,7 @@
 #include <optional>
 #include <queue>
 
-namespace NExecutors {
+namespace NComponents {
 
 // UnboundedBlockingQueue
 template <class T>
@@ -60,4 +60,4 @@ private:
     std::atomic<bool> close_{false};
 };
 
-}  // namespace pool
+}  // namespace NComponents

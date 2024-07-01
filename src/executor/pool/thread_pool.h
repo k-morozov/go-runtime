@@ -39,7 +39,7 @@ private:
     const size_t workers_count_;
 
     std::vector<std::unique_ptr<std::thread>> workers_;
-    UnboundedBlockingQueue<TaskPtr> queue_;
+    NComponents::UnboundedBlockingQueue<TaskPtr> queue_;
 
     std::atomic<bool> shutdown_{false};
 
